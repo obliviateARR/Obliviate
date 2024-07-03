@@ -1,0 +1,16 @@
+# cache
+\~/
+
+# python cache
+*.pyc
+__pycache__/
+
+# Ipython cache
+.ipynb_checkpoints/
+
+#data
+defense_data_ign/
+defense_data_ign
+
+#transformers backup
+transformers~/
