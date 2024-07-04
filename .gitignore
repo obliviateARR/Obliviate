@@ -8,9 +8,8 @@ __pycache__/
 # Ipython cache
 .ipynb_checkpoints/
 
-#data
-defense_data_ign/
-defense_data_ign
+#model dir
+model/
 
-#transformers backup
-transformers~/
+#output dir
+output/
