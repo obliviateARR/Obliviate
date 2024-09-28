@@ -1,6 +1,6 @@
 # Obliviate
 
-Implementation of [*Obliviate*: Neutralizing Task-agnostic Backdoors within the Parameter-efficient Fine-tuning Paradigm](https://openreview.net/pdf?id=8xBMLAOZxq)), *ARR preprint*
+Implementation of [*Obliviate*: Neutralizing Task-agnostic Backdoors within the Parameter-efficient Fine-tuning Paradigm](https://arxiv.org/abs/2409.14119)
 
 NOTE: Our implementation in the `./transformers` directory is based on `adapter-transformers` v.3.2.1 (https://github.com/adapter-hub/adapter-transformers-legacy).
 
@@ -33,3 +33,14 @@ Train and evalute PEFT models with defense
 ./run.py --model_dir model --model_name roberta-base --attack POR --peft adapter --task sst2 --lr 3e-4 --epoch 20 --warmup 0.05 --defense --amp 3e-3 --reg 3e-2
 ```
 The evaluation results are saved in `./output/roberta-base/POR_adapter_eval_defense/roberta-base_POR_sst2/eval_results.json`
+
+## Citation
+
+```bibtex
+@article{kim2024obliviate,
+  title={Obliviate: Neutralizing Task-agnostic Backdoors within the Parameter-efficient Fine-tuning Paradigm},
+  author={Kim, Jaehan and Song, Minkyoo and Na, Seung Ho and Shin, Seungwon},
+  journal={arXiv preprint arXiv:2409.14119},
+  year={2024}
+}
+```
