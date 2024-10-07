@@ -33,14 +33,3 @@ Train and evalute PEFT models with defense
 ./run.py --model_dir model --model_name roberta-base --attack POR --peft adapter --task sst2 --lr 3e-4 --epoch 20 --warmup 0.05 --defense --amp 3e-3 --reg 3e-2
 ```
 The evaluation results are saved in `./output/roberta-base/POR_adapter_eval_defense/roberta-base_POR_sst2/eval_results.json`
-
-## Citation
-
-```bibtex
-@article{kim2024obliviate,
-  title={Obliviate: Neutralizing Task-agnostic Backdoors within the Parameter-efficient Fine-tuning Paradigm},
-  author={Kim, Jaehan and Song, Minkyoo and Na, Seung Ho and Shin, Seungwon},
-  journal={arXiv preprint arXiv:2409.14119},
-  year={2024}
-}
-```
